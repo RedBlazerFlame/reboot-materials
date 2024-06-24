@@ -1,3 +1,7 @@
+---
+markdown: GFM
+---
+
 # Notes for Contributors
 E
 
