@@ -104,7 +104,7 @@ int main() {
 
 ---
 # Attachments
-- [My Code](./main.cpp)
+- [My Code](https://redblazerflame.github.io/reboot-materials/test-slides/main.cpp)
 
 ---
 <!-- _class: lead -->
