@@ -1,0 +1,44 @@
+body{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+   }
+   h1 {
+    color: #224466;
+    font-weight: bold;
+   }
+   h1, h2{
+      font-weight: 300;
+   }
+   a,a:visited,a:hover,a:active{
+      position:relative;
+      transition:0.5s color ease;
+      text-decoration:none;
+      color:#64B5F6;
+    }
+    a:hover{
+      color:#607D8B;
+    }
+    a.before:before,a.after:after{
+      content: "";
+      transition:0.5s all ease;
+      -webkit-backface-visibility:hidden;
+              backface-visibility:hidden;
+      position:absolute;
+    }
+    a.before:before{
+      top:-0.25em;
+    }
+    a.after:after{
+      bottom:-0.25em;
+    }
+    a.before:before,a.after:after{
+      height:5px;
+      height:0.35rem;
+      width:0;
+      background:#d73444;
+    }
+    a.first:after{
+      left:0;
+    }
+    a.before:hover:before,a.after:hover:after{
+      width:100%;
+    }
