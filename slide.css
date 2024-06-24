@@ -1,0 +1,16 @@
+section.lead {
+    text-align: center;
+}
+
+section.top {
+    justify-content: flex-start !important;
+}
+
+section.normal {
+    text-align: initial;
+}
+
+img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
+}

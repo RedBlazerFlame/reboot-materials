@@ -7,18 +7,13 @@ style: |
     pre, code {
         background-color: #dbd4c4;
     }
+
     pre {
         filter: invert(100%);
     }
 ---
 <style>
-    section.lead {
-        text-align: center;
-    }
-
-    .normal {
-        text-align: initial;
-    }
+    @import "../slide.css";
 </style>
 
 <!-- _class: lead -->
