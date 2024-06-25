@@ -746,4 +746,4 @@ The time complexity of this solution is $O(M2^N)$, which should pass.
 
 # Homework
 
-See the [Reboot Page](https://redblazerflame.github.io/reboot-materials/compprog-materials/veteran/5-dp-2/) for your homework this week :smile:
+See the [Reboot Page](https://redblazerflame.github.io/reboot-materials/compprog-materials/veteran/4-dp-1/) for your homework this week :smile:
