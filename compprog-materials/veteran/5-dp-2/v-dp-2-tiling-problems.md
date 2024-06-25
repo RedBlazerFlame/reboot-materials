@@ -70,7 +70,7 @@ Consider the set of identical $1 \times 2$ and $2 \times 1$ dominoes.
 
 # Tiling Problems: Set 3
 
-You have four types of tiles: one green $1 \times 1$ tile, one blue $1 \times 1$ tile, a yellow $2 \times 1$ tile, and a red $1 \times 2$ tile. All tiles of the same type are indistinguishable from one another
+You have four types of tiles: green $1 \times 1$ tiles, blue $1 \times 1$ tiles, yellow $2 \times 1$ tiles, and red $1 \times 2$ tiles. All tiles of the same type are indistinguishable from one another
 
 1. How many ways are there to tile a $3 \times 2$ grid with this tileset?
 1. How many ways are there to tile a $3 \times 1000$ grid with this tileset? Give your answer $\text{mod } 10^9 + 7$.
