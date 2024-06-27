@@ -349,6 +349,17 @@ We'll have one topic per week with some problems relevant to that topic.
 
 ---
 
+<!-- _class: top -->
+
+# Training Format
+
+- Feel free to **ask questions in the Discord when you're stuck**. You're not alone in training!
+- Feel free to **discuss the problems with other students**.
+- If you can't come up with any ideas on how to solve a problem after a long time (eg., 45 minutes), you may **read the editorial**. I recommend reading the editorial until you encounter a new idea you didn't try before, then stop reading the editorial and investigate that path. Then, if you get stuck again, you can read the next sentence in the editorial, and so on.
+- Solve *as many problems* as you can! If you finish the homework for the week, you may read the supplementary material provided in the weekly modules or help others out! The best way to learn is by teaching.
+
+---
+
 <!-- _class: lead -->
 
 # C++

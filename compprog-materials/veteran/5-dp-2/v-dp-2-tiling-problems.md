@@ -72,6 +72,60 @@ Consider the set of identical $1 \times 2$ and $2 \times 1$ dominoes.
 
 You have four types of tiles: green $1 \times 1$ tiles, blue $1 \times 1$ tiles, vertical $2 \times 1$ tiles, and horizontal $1 \times 2$ tiles. All tiles of the same type are indistinguishable from one another. Also, the tiles cannot be rotated.
 
-1. How many ways are there to tile a $3 \times 2$ grid with this tileset?
-1. How many ways are there to tile a $3 \times 1000$ grid with this tileset? Give your answer $\text{mod } 10^9 + 7$.
-1. How many ways are there to tile a $3 \times 10^{18}$ grid with this tileset? Give your answer $\text{mod } 10^9 + 7$.
+1. How many ways are there to tile a $2 \times 2$ grid with this tileset?
+1. How many ways are there to tile a $2 \times 1000$ grid with this tileset? Give your answer $\text{mod } 10^9 + 7$.
+1. How many ways are there to tile a $2 \times 10^{18}$ grid with this tileset? Give your answer $\text{mod } 10^9 + 7$.
+
+---
+
+<!-- _class: lead -->
+
+# Answers
+
+---
+
+<!-- _class: top -->
+
+<style scoped>
+    h1:first-of-type {
+        text-align: center;
+    }
+</style>
+
+# Answers: Set 1
+
+1.1. **2**
+1.2. **107579939**
+1.3. **680057396**
+
+---
+
+<!-- _class: top -->
+
+<style scoped>
+    h1:first-of-type {
+        text-align: center;
+    }
+</style>
+
+# Answers: Set 2
+
+2.1. **3**
+2.2. **146530309**
+2.3. **558008386**
+
+---
+
+<!-- _class: top -->
+
+<style scoped>
+    h1:first-of-type {
+        text-align: center;
+    }
+</style>
+
+# Answers: Set 3
+
+2.1. **34**
+2.2. **647780007**
+2.3. **912631521**
