@@ -18,7 +18,7 @@ style: |
 
 <!-- _class: lead -->
 
-# Tiling Problems
+# Probset: Proving Greedy Algorithms
 ## Veteran Track
 ## Gabee De Vera
 
