@@ -1,0 +1,6 @@
+MAX_SUM[ 1, 5 ] = 5
+MAX_SUM[ 4, 9 ] = 6
+MAX_SUM[ 1, 9 ] = 6
+MAX_SUM[ 1, 5 ] = 15
+MAX_SUM[ 4, 9 ] = 19
+MAX_SUM[ 1, 9 ] = 21
