@@ -1,0 +1,12 @@
+QUERY [ 0, 6 ] = 25
+QUERY [ 1, 3 ] = 6
+UPDATING [ 0, 6 ] += 2
+QUERY [ 0, 6 ] = 39
+QUERY [ 1, 3 ] = 12
+UPDATING [ 0, 6 ] += -2
+UPDATING [ 1, 3 ] += 2
+QUERY [ 0, 6 ] = 31
+QUERY [ 0, 3 ] = 15
+UPDATING [ 2, 3 ] += -3
+QUERY [ 0, 6 ] = 25
+QUERY [ 0, 3 ] = 9

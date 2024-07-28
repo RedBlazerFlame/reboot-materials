@@ -206,7 +206,7 @@ style: |
 
 # Homework
 
-- Check the [Reboot Website](https://redblazerflame.github.io/reboot-materials/compprog-materials/veteran/15-segment-trees-1/) for the homework this week. Segment trees are advanced black magic reserved for the true masters of the CompProg art (/hj lol anyone can learn it), and it requires practice to learn to wield its power (okay this is actually true ^^). The techniques used this week are even more obscure and difficult to master. Thus, feel free to **collaborate and discuss with your fellow trainees**. You may also **ask for help from the trainers** and even **read the editorial (but only when you're really stuck)** :smile:
+- Check the [Reboot Website](https://redblazerflame.github.io/reboot-materials/compprog-materials/veteran/16-segment-trees-2/) for the homework this week. Segment trees are advanced black magic reserved for the true masters of the CompProg art (/hj lol anyone can learn it), and it requires practice to learn to wield its power (okay this is actually true ^^). The techniques used this week are even more obscure and difficult to master. Thus, feel free to **collaborate and discuss with your fellow trainees**. You may also **ask for help from the trainers** and even **read the editorial (but only when you're really stuck)** :smile:
 
 ---
 
