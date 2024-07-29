@@ -98,12 +98,90 @@ style: |
 ---
 <!-- _class: top -->
 # Implementation: Counting 1s in a Range
-- TODO
+- The Implementation is quite long. Check the GitHub for the implementation: https://github.com/RedBlazerFlame/reboot-materials/tree/main/compprog-materials/veteran/18-lazy-propagation-2/solutions/1-count.cpp
 
 ---
 <!-- _class: top -->
 
-- TODO range sum with range repermutation
+# Example 2: Range Permutation Assignment
+
+- Now, consider this new problem: You are given an array $a$ of nonnegative integers in the range $[0, k)$, where $k$ is a given constant. You need to support the following operations:
+    1. Range Sum
+    1. Range Permutation Assignment: You are given a list $b$ of $k$ elements. $b$ is a permutation of the list $[0, 1, 2, ..., k - 1]$. For each number $a[i]$ in the range, you must assign it to $b[a[i]]$. In other words, all $0$s become $b[0]$, all $1$s become $b[1]$, all $2$s become $b[2]$, and so on.
+- Your goal is to find an algorithm that runs in $O(k \log n)$ per query.
+
+---
+<!-- _class: top -->
+
+# Example 2: Range Permutation Assignment
+- Let us consider an example. Suppose you have an array $[3, 1, 4, 1, 5]$, with $k = 6$.
+- Suppose that we want to perform a range repermutation over the whole array, with $b = [2, 3, 0, 5, 1, 4]$.
+- Since $b[3] = 5$, all $3$s become $5$.
+- Since $b[1] = 3$, all $1$s become $3$s.
+- Since $b[4] = 1$, all $4$s become $1$s.
+- Finally, since $b[5] = 4$, all $5$s become $4$s.
+- Thus, the array will become $[5, 3, 1, 3, 4]$.
+
+---
+<!-- _class: top -->
+
+# Example 2: Range Permutation Assignment
+- Now, let us solve this problem. Again, we consider what remains true *after updating the entire interval*.
+
+---
+<!-- _class: top -->
+
+# Example 2: Range Permutation Assignment
+- Now, let us solve this problem. Again, we consider what remains true *after updating the entire interval*.
+- Let us consider how many times each number appears in the interval. Denote $\text{count}[i]$ as the number of times the number $i$ appears in the interval.
+
+---
+<!-- _class: top -->
+
+# Example 2: Range Permutation Assignment
+- Now, let us solve this problem. Again, we consider what remains true *after updating the entire interval*.
+- Let us consider how many times each number appears in the interval. Denote $\text{count}[i]$ as the number of times the number $i$ appears in the interval.
+- Consider a number $i$. After an update, it becomes $b[i]$.
+- Therefore, we have the identity $\text{count}_{\text{new}} [b[i]] = \text{count}[i]$, since all numbers that are $i$ become $b[i]$.
+
+---
+<!-- _class: top -->
+
+# Example 2: Range Permutation Assignment
+- Now, let us solve this problem. Again, we consider what remains true *after updating the entire interval*.
+- Let us consider how many times each number appears in the interval. Denote $\text{count}[i]$ as the number of times the number $i$ appears in the interval.
+- Consider a number $i$. After an update, it becomes $b[i]$.
+- Therefore, we have the identity $\text{count}_{\text{new}} [b[i]] = \text{count}[i]$, since all numbers that are $i$ become $b[i]$.
+- Since $i$ could be any number from $0$ to $k - 1$, we must store the counts of all numbers from $0$ to $k - 1$.
+
+---
+<!-- _class: top -->
+
+# Example 2: Range Permutation Assignment
+- Then, to perform a range update, simply perform the reassignment that we described previously if the update interval contains the current node's interval. Otherwise, recurse both children.
+- Then, to combine the states of the two children, simply sum up the counts of each number $i$. in other words, $\text{count}[i] := \text{count}_{l}[i] + \text{count}_{r}[i]$ .
+- This takes $O(k \log n)$ time.
+
+---
+<!-- _class: top -->
+
+# Example 2: Range Permutation Assignment
+- To obtain the range sum, notice that each number $i$ contributes $i \cdot \text{count}[i]$ to the sum.
+- You can simply sum up the contributions of all numbers from $0$ to $k - 1$ in $O(k)$ time.
+- Therefore, the total complexity of a range sum is $O(k \log n)$.
+
+---
+<!-- _class: top -->
+
+# Example 2: Range Permutation Assignment
+- It should be noted that this problem is *not* a trivial application of lazy propagation.
+- In particular, it may be hard to combine two lazy updates together! I leave it to you to figure this out. You may consult the implementation in the next slide for help or ask one of the trainers for further clarifications.
+
+---
+<!-- _class: top -->
+
+# Implementation: Range Permutation Assignment
+- The Implementation is quite long. Check the GitHub for the implementation: https://github.com/RedBlazerFlame/reboot-materials/tree/main/compprog-materials/veteran/18-lazy-propagation-2/solutions/repermute.cpp
 
 ---
 
@@ -112,3 +190,4 @@ style: |
 # Homework
 
 - Check the [Reboot Website](https://redblazerflame.github.io/reboot-materials/compprog-materials/veteran/18-lazy-propagation-2/) for the homework this week. This week, you wil only be assigned one problem, but it will be *very difficult*. In fact, you'll be tackling a previous IOI problem! Feel free to **collaborate and discuss with your fellow trainees**. You may also **ask for help from the trainers** and even **read the editorial (but only when you're really stuck)** :smile:
+- For this week's problem, my biggest tip for you is to consider what remains true after applying an operation. Try experimenting with the state of each node! ^^
