@@ -668,7 +668,7 @@ Bitmasks have a lot of advantages. For instance, you can use bitmask operations 
 
 $$
 \begin{align}
-3\text{rd bit of }11010_{2} & = \left(11010_{2} >> 3\right) \& 1_{2}\\ 
+3\text{rd bit of }11010_{2} & = \left(11010_{2} >> 2\right) \& 1_{2}\\ 
 & = \left(110_{2}\right) \& 1_{2}\\ 
 & = 0_{2}
 \end{align}
