@@ -76,8 +76,7 @@ $1, 1, 1, 1, 2, 1, 1, 3, 3, 1, 1, 4, \_$
 
 $1, 1, 1, 1, 2, 1, 1, 3, 3, 1, 1, 4, \mathbf{6}$
 
-- It's Pascal's Triangle, but the entries have been flattened out
-- Again, 
+- It's Pascal's Triangle, but the entries have been flattened out 
 
 ---
 
@@ -181,7 +180,7 @@ $1, -1, -1, 0, -1, 1, -1, \mathbf{0}$
 
 $1, -1, -1, 0, -1, 1, -1, \mathbf{0}$
 
-- Now, consider $n = 24 = 2^3 \cdot 3$. Since there are no primes with an exponent greater than one, and there are $2$ prime factors ($2$ and $3$), $\mu(24) = 1$.
+- Now, consider $n = 10 = 2 \cdot 5$. Since there are no primes with an exponent greater than one, and there are $2$ prime factors ($2$ and $5$), $\mu(10) = 1$.
 - Finally, consider $n = 8 = 2^3$. Notice that the exponent of $2$ is greater than $1$. This means that there's a square that divides the number $8$. In this case, it's $2^2 = 4$. Therefore, $\mu(8) = 0$.
 
 ---
@@ -522,7 +521,7 @@ $$\mu\left(n\right) = \begin{cases}0\text{ if }n\text{ has a perfect square as a
 - Writing a program to compute the Mobius function will be left to you as an exercise! ^^
 - To help guide you, here are some things that will help you compute $\mu$:
     1. You need to know how many prime factors a number $n$ has
-    1. Then, you must determine whether or not a number is squarefree (i.e., has no perfect squre factors)
+    1. Then, you must determine whether or not a number is squarefree (i.e., has no perfect square factors)
 
 ---
 
